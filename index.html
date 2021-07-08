@@ -17,13 +17,15 @@
 <p>এবার আমরা আপলোড ইমেজে ক্লিক করব । করে আমাদের যে ছবিটা লাগবে সেটা সিলেক্ট করে দিব। দিয়ে দিলে কিছুক্ষন পরে ডাউনলোড অপশন আসবে। এটাকে এবার ডাউনলোড করে নিব। </p>
 <p>https://www.photopea.com/ এ গিয়ে ইমেজ কে ভিভিন্ন ভাবে সাজানো যায়। এবার যে ব্যগ্রাউন্ড ইমেজ দিব সেটাকে আগে টেনে নিব তারপরে উপরে যে ছবি দিব সেটা কে সিলেক্ট করে নিয়ে ওখানে বসাব। এখন দেখা যাবে ইমেজের অসামজস্য আছে কি না । থাকলে বাম পাসের কারসারের নিচের স্কয়ার সেপে ক্লিক করে ধরে রাখতে হবে রাখলে অনেক গুলা অপশন আসবে এখানে ইলিপ্স সিলেক্ট এ সিলেক্ট করে ছবির এক প্রান্ত থেকে টেনে অন্য প্রান্তে নিয়ে যে অংশ বাদ দিব সেখানে রেখা একে নিব । এবার উপরের অংশে সিলেক্ট অপশনে গিয়ে ইনভার্স করব ।ইনভার্স করার পর ডিলেট এ চাপ দিতে হবে । কিবোরড এর ডিলিটে চাপ দিলে ইরোর দিবে প্রথম এবার যে ছবিটা কাত্তেছি সেটার ফাইলের উপরে ডান ক্লিক করলে অনেক অপশনের মাঝে রেস্টোরাইস আসবে তখন এটাকে  ক্লিক করলেই কাজ হয়ে যাবে। এবার ছবিটাকে সিলেক্ট করে সঠিক যায়গায় বসিয়ে উপরের ফাইল অপশনে গিয়ে ক্লিক করলে এক্সপর্ট এজ অপ্সহন আসবে তখন এতাকে পি এন জি তে এক্সপর্ট করে সেইভ করব ।  </p> <br>
 <p>এবার দেখি কিভাবে একটা সাইট বানানো যায় । তবে একটা কথা আগেই জেনে নেই সেটা কোন লেখাকে স্টাইলিশ করতে গেলে fonts.google.com এ সার্চ দিতে হবে । এখানে অনেক ধরনের লেখার ইস্টাইল দিবে তবে আমরা যাবো poppins এ ক্লিক করে যেটা নিব সেটা সিলেক্ট করব আপাদত reguler 400 কে +select this style এ ক্লিক করব করলে এখানে একটা লিংক দেখা যাবে সেটাকে আমরা সম্পুর্ন কপি করে  style.css যে লিংক থাকবে সেটার উপরে আলাদা ভাবে পেস্ট করে দিব। এখানেই শেষ হয় নি +select this style এর যে লিংক কপি করেছি তার নিচে CSS rules to specify families এর নিচের লিংক কপি করব করে  style.css এ body এর মাঝে নিয়ে বসাব । লেখা কমানো বাড়ানোর জন্য style.css এ গিয়ে যে ট্যগ এর লেখা বড় করব সেই ট্যগ লিখতে হবে যেমন h1 {font-size: 50px;} মানে এভাবে বাড়াতে হবে। এবার এখানে কোন ক্লাস ব্যবহার করতে হলে .something-something {color:something;} এভাবে ট্যগ লিখতে হবে ।  </p>
-<p>পাশা পাশি কোন কিছুকে বসানোর জন্য আমরা জিনিস গুলাকে আলাদা আলাদা div এর মধ্যে বসাব বসিয়ে section নিয়ে তার মধ্যে div গুলাকে বসাতে হবে । এখন style.css এর মধ্যে গিয়ে section {display:flex; } এই ট্যগ বসাতে হবে ।  এবার  index.html এ গিয়ে দুই div এর মধ্যে একই ক্লাস নিতে হবে যেমনঃ <div class="half-width-png"></div> (png টা বাদ দিতে হবে) এভাবে । গুরুত্ব পুর্ন কথা Linkdin প্রোফাইল খুলতে হবে অবশ্যই। আচ্ছা এবার যদি কালারের শেড নিতে চাই তাহলে আমাকে অবশ্যই style.css এর ভিতরে গিয়ে যেখানে শেড টা করব তার ক্লাসের ভিতরে background-image: linear-gradient(yellow, orangered); কোনার মাঝে একটা ইমেজ ব্যবহার করার জন্য প্রথমে index.html এর ভিতরে যে <section class="top-baner-png"></section> (png টা বাদ দিতে হবে) নিয়েছিলাম সেটা কপি করে style.css এর ভিতরে  .top-baner {background-image: url(images/top-banner.png);} এভাবে লিখে দিব ফাস্ট ব্যকেটের মধ্যে থাকবে সেই ইমেজের নাম । ছবিটা যেন বার বার রিপিট না হয় তার জন্য  background-repeat: no-repeat; লিখতে হবে ওটার মধ্যে। এখন দেখা যাচ্ছে ইমেজ টায় ডিফল্ট ভাবে মার্জিন পাচ্ছে সেটা যদি না চাই তাহলে style.css এর body তে  { margin: 0;} করে দিতে হবে । 
+<p>পাশা পাশি কোন কিছুকে বসানোর জন্য আমরা জিনিস গুলাকে আলাদা আলাদা div এর মধ্যে বসাব বসিয়ে section নিয়ে তার মধ্যে div গুলাকে বসাতে হবে । এখন style.css এর মধ্যে গিয়ে section {display:flex; } এই ট্যগ বসাতে হবে ।  এবার  index.html এ গিয়ে দুই div এর মধ্যে একই ক্লাস নিতে হবে যেমনঃ <div class="half-width-png"></div> (png টা বাদ দিতে হবে) এভাবে । গুরুত্ব পুর্ন কথা Linkdin প্রোফাইল খুলতে হবে অবশ্যই। আচ্ছা এবার যদি কালারের শেড নিতে চাই তাহলে আমাকে অবশ্যই style.css এর ভিতরে গিয়ে যেখানে শেড টা করব তার ক্লাসের ভিতরে background-image: linear-gradient(yellow, orangered); কোনার মাঝে একটা ইমেজ ব্যবহার করার জন্য প্রথমে index.html এর ভিতরে যে <section class="top-baner-png"></section> (png টা বাদ দিতে হবে) নিয়েছিলাম সেটা কপি করে style.css এর ভিতরে  .top-baner {background-image: url(images/top-banner.png);} এভাবে লিখে দিব ফাস্ট ব্যকেটের মধ্যে থাকবে সেই ইমেজের নাম । ছবিটা যেন বার বার রিপিট না হয় তার জন্য  background-repeat: no-repeat; লিখতে হবে ওটার মধ্যে। এখন দেখা যাচ্ছে ইমেজ টায় ডিফল্ট ভাবে মার্জিন পাচ্ছে সেটা যদি না চাই তাহলে style.css এর body তে  { margin: 0;} করে দিতে হবে । যদি পোস্টার টাইপ করতে চাই তাহলে লেখা গুলাকে div এর মধ্য নিয়ে ক্লাস দিয়ে দিতে হবে । এবার https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow এ গিয়ে Syntax এর কোড গুলো ফলো করলে অনেক টা 
+সেপ এ আনা যাবে ডিভ এর মধ্যে যে ক্লাস নিব সেটাকে style.css এ গিয়ে সাজাতে হবে এভাবে যেমনঃ width: 40%; margin-left: 5%; margin-right: 5%; padding-left: 20px; border-radius: 10px; box-shadow: 10px 10px 40px orange; তাহলে স্যডো আক্রিতির একটা সেপ চলে আসবে । সাইডে যদি কালার কম্বিনেশন দিতে চাই তবে 
+
 </p> <br> <br>
 <img src="images/IMG_20210107_082842.jpg" alt=""> <br>   
 
-<section class="top-baner">
+<section class="top-baner flexible-containaer">
     <div class="half-width">
-        <h1>Welcome To </h1>
+        <h2>Welcome To </h2>
         <h1 > <span class="orange-color">Jhonker Mahabub </span> World!</h1>
         <h3>Build Climber and Train StopperBuild Climber and Train Stopper</h3>
         <p>You might saw me jumping, climbing buildings, and stopping trains. But nobody pays me a dime for that work. That's why I am learning and mastering web development. I will not stop until I become the Web Development Hero.</p>
@@ -33,17 +35,35 @@
         <img src="images/jhankar.png" alt="">
     </div>
 </section>
-<section class="dream-big">
+<section class="dream-big flexible-containaer">
     <div>
         <img src="images/jhankar2.png" alt="">
     </div>
     <div class="half-width">
-        <h1>Dream Big</h1>
-        <h3>Become a web developer</h3>
+        <h2>Dream Big</h2>
+        <h3 class="orange-color">Become a web developer</h3>
         <p>I already learned the basic HTML and CSS. I can build any simple website. I can even teach my grandma how to make simple website. My goal is to build 3 websites and learn advanced topics.</p>
         <a class="link-button" target="_blank" href="https://fonts.google.com/specimen/Poppins?query=po">DOWNLOAD RESUME</a>
     </div>
-
 </section>
+<section class="experince-aria">
+    <h1>Experiences</h1>
+    <div class="flexible-containaer">
+        <div id="web-boss" class= "experince-jone">
+            <h2>Full Stack Web Developer</h2>
+            <h3 class="orange-color">2021-Present | Pro Level Developer</h3>
+            <p>I am the master of HTML, CSS and Javascript. I know everything needed to make a website function, efficient. I didn't stop with the web. I went beyond with most popular Javascript framework called Vue JS. I even know the deployment, server and security. I will give you 100% web solution.</p>
+        </div>
+  
+        <div id="web-jounior" class="experince-jone">
+            <h2>Baby Web Developer</h2>
+            <h3 class="orange-color">2020-2021 | Programming Hero Learner</h3>
+            <p>They didn't offer me a job. But I made myself as a remove web developer. I made their website and showed it to them. They liked it. And uploaded the content. It was fun working at Programming Hero</p>
+        </div>
+    </div>
+</section>
+<footer>
+    <p>© Peter Parker 2021, a Programming Hero initiative.</p>
+</footer>
 </body>
 </html>
